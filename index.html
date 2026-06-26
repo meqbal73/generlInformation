@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Solutions | Trainee Portal</title>
+    <meta name="description" content="Interactive onboarding and learning portal for Ultimate Solutions trainees.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div id="toast-container" aria-live="polite"></div>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Ultimate LMS</h2>
+                <div class="xp-display">Level <span id="user-level">1</span> | <span id="user-xp">0</span> XP</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-target="dashboard" class="active">Dashboard</a></li>
+                <li><a href="#" data-target="modules">Learning Modules</a></li>
+                <li><a href="#" data-target="quizzes">Quizzes & Exercises</a></li>
+                <li><a href="#" data-target="settings">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <header class="top-header">
+                <div class="search-bar">
+                    <input type="text" id="global-search" placeholder="Search lessons, tips, FAQs..." aria-label="Search">
+                </div>
+                <div class="user-controls">
+                    <button id="theme-toggle" aria-label="Toggle Dark/Light Theme">🌓</button>
+                    <span class="streak-counter">🔥 <span id="user-streak">1</span> Day Streak</span>
+                </div>
+            </header>
+
+            <section id="dynamic-content">
+                <h1>Welcome to Ultimate Solutions</h1>
+                <p>Select a module from the sidebar to begin your training.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>AQ4</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
